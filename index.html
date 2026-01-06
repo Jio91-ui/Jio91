@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jio Colour Trading</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Jio Colour Trading (Demo)</h1>
+
+<div class="wallet">
+  Balance: ₹<span id="balance">1000</span>
+</div>
+
+<div class="timer">
+  Next Result In: <span id="time">30</span>s
+</div>
+
+<div class="colors">
+  <button onclick="placeBet('Red')" class="red">Red</button>
+  <button onclick="placeBet('Green')" class="green">Green</button>
+  <button onclick="placeBet('Violet')" class="violet">Violet</button>
+</div>
+
+<div class="amount">
+  <input type="number" id="betAmount" placeholder="Enter Amount">
+</div>
+
+<div class="actions">
+  <button onclick="deposit()">Deposit</button>
+  <button onclick="withdraw()">Withdraw</button>
+</div>
+
+<h3>Last Result: <span id="result">---</span></h3>
+
+<h3>History</h3>
+<ul id="history"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
